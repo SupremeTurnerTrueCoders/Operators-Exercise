@@ -17,36 +17,29 @@
 
 
 
-            Console.WriteLine("Please enter the radius of your circle");;
-            var userInput = Console.ReadLine();
-           
-
-
+            Console.WriteLine("Please enter the radius of your circle"); ;
+            
 
             var radius = double.Parse(Console.ReadLine());
-         
-        } 
 
+            
 
+            Console.WriteLine(AreaOfCircle(radius));
+        }
 
+        public static double AreaOfCircle(double Radius)
+        {
+            var area = Math.PI * Math.Pow(Radius, 2);
+            return area;
+        }
     }
 }
 
 
 
 
-        public static double AreaOfCircle(double Radius);
- 
-        {
 
 
-    
-    var area = Math.PI * Math.Pow(Radius, 2);
-         return area;
-        }
-
-
-  
 
 
 
